@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 추천</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <style>
+        body {
+            background: rgb(255, 255, 255);
+        }
+
+        .slider {
+            width: 400px;
+            height: 500px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .slick-dots {
+            bottom: -30px;
+        }
+
+        .slick-dots li button:before {
+            font-size: 10px;
+            line-height: 10px;
+            color: #848484;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider">
+        <a href="/movie/movieIntro1.html"><img src="/images/오펜하이머.webp" alt="Image 1"></a>
+        <a href="/movie/movieIntro2.html"><img src="/images/아바타.webp" alt="Image 2"></a>
+        <a href="/movie/movieIntro3.html"><img src="/images/어벤져스엔드게임.webp" alt="Image 3"></a>
+        <a href="/movie/movieIntro4.html"><img src="/images/잠.webp" alt="Image 4"></a>
+        <a href="/movie/movieIntro5.html"><img src="/images/카.webp" alt="Image 5"></a> 
+    </div>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        adaptiveHeight: true
+    });
+</script>

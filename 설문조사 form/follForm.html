@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta value="viewport" content="wnameth=device-wnameth, initial-scale=1.0">
+    <title>설문조사</title>
+    <style>
+        fieldset{
+            width: 350;
+        }
+    </style>
+</head>
+<body>
+    <form action="follDone.html" method="get"></form>
+    <fieldset>
+        <legend>인증</legend>
+        <ul>
+            <label for="name" >이름</label>
+            <input type="text" name="name" />
+        </ul>
+        <ul>
+            <label for="phonNum" >전화번호</label>
+            <input type="text" name="phonNum" />
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>나이</legend>
+        <ul>
+            <li><input type="radio" name="age" value="below 20" />20세 이하</li>
+            <li><input type="radio" name="age" value="above 21, below 40" />21세 이상, 40세 이하</li>
+            <li><input type="radio" name="age" value="above 41, below 60" />41세 이상, 60세 이하</li>
+            <li><input type="radio" name="age" value="above 61">61세 이상</li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>취미(중복선택 가능)</legend>
+        <ul>
+            <li><input type="checkbox" name="hobby" value="reading" />독서</li>
+            <li><input type="checkbox" name="hobby" value="game" />게임</li>
+            <li><input type="checkbox" name="hobby" value="movie" />영화감상</li>
+            <li><input type="checkbox" name="hobby" value="exercise" />운동</li>
+        </ul>
+        <ul>
+            <label for="else" >기타</label>
+            <input type="text" name="else" />
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>좋아하는 장르(중복선택 가능)</legend>
+        <ul>
+            <li><input type="checkbox" name="like" value="romance" />로맨스</li>
+            <li><input type="checkbox" name="like" value="thriller" />스릴러</li>
+            <li><input type="checkbox" name="like" value="fantasy" />판타지</li>
+            <li><input type="checkbox" name="like" value="sf" />sf</li>
+        </ul>
+        <ul>
+            <label for="else" >기타</label>
+            <input type="text" name="else" />
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>가장 최근에 봤던 영화</legend>
+        <ul>
+            <label for="title" >제목</label>
+            <input type="text" name="title" />
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>가장 감명 깊게 봤던 영화</legend>
+        <ul>
+            <label for="title" >제목</label>
+            <input type="text" name="title" />
+        </ul>
+    </fieldset>
+    <input type="submit" />
+</body>
+</html>
