@@ -1,0 +1,37 @@
+#container{
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+}
+#check{
+    width: 640px;
+    border: 1px solid #cccc;
+}
+h1{
+    color: white;
+    background-color: #000;
+    /* 제목과 다른 요소들 사이의 여백 */
+    margin:  0;
+    /* 태두리와 제목 텍스트 사이에 여백 */
+    padding: 10px;
+
+    font-size: 30px;
+}
+h2{
+    color: rebeccapurple;
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+span{
+    color: #7a7a7acc;
+}
+*{
+	font-family: 'Nanum Myeongjo', serif;
+}

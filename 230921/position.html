@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <link rel="stylesheet" href="/230921/style/positionStyle.css">
+</head>
+<!-- position
+static : 문서의 흐름에 맞춰 배치(기본)
+relative : 위칫값을 지정할 수 있는 static
+absolute : relative값을 사용한 상위요소 기준으로 위치를 지정
+fixed : 브라우저를 기준으로 위치를 지정
+
+absolute사용시 주의점
+부모요소를 기준으로 위치를 잡기 떄문에 부모 요소가 없으면 계속해서 더 상위의 요소를 찾아 기준으로 삼는다.
+때문에 상위에 relative를 배치해 위치 지정을 정확하게 하는 것이 좋다.
+-->
+<body>
+
+    <p id="static">
+        수리부엉이는 올빼미목 올빼미과 수리부엉이속의 새이다. 대한민국과 중국을 포함한 동아시아부터 러시아 남부, 중앙아시아, 그리고 유럽 전 지역에서 서식하는 대형 맹금류이다.
+    </p>
+    
+    <p id="relative-1">
+        한국에서는 흔하지 않은 텃새로 2급 멸종위기종으로 지정된 천연기념물이다. 주로 사람의 접근성이 낮은 깊은 숲 속이나 나무가 우거진 산림, 바위산이나 절벽 같은 곳에서 둥지를 튼다.
+    </p>
+    <div id="test">
+    <p id="relative-2">
+        키는 위아래로 60 ~ 75cm, 익장 131 ~ 188cm. 초대형 개체는 익장이 무려 2m나 되었다는 기록도 있다. 이 정도면 모든 올빼미/부엉이 종을 통틀어 사실상 최대종이다. 깃털 색은 회색에서 갈색, 고동색까지 있다.
+        체중은 암컷이 1.75 ~ 4.6kg, 수컷이 1.2 ~ 3.2kg으로 겉보기에 비해 매우 가볍다. 시베리아나 만주지방같이 추운 곳에서 사는 수리부엉이 종에서는 최대 7kg까지 나온 초대형도 있다.
+    </p>
+    </div>
+    <p id="fixed"></p>
+</body>
+</html>
