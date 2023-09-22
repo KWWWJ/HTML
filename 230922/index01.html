@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function myFunc(a, b, c) {
+            const len = arguments.length
+
+            if(len == 0){
+                console.log("파라미터 없음");
+            }
+            else if(len == 1){
+                console.log("파라미터 있음");
+            }
+            else if(len == 2){
+                return console.log(a + b);
+            }
+            else{
+                return console.log(a + b+ c);
+            }console
+        }
+        myFunc();
+        myFunc(1);
+        myFunc(1, 2);
+        myFunc(1, 2, 3);
+
+        //재귀함수 : 자기 자신을 계속해서 호출하는 함수. 반드시 탈출조건이 있어야한다.
+
+        function recursiveCount(n){
+            if(n<0) return;
+            console.log(n);
+            recursiveCount(n-1)
+        }
+        recursiveCount(10);
+
+        function factorial(n) {
+            if(n <= 1) return 1;
+            return n * factorial(n-1);
+        }
+        
+        // function sum(a,b) {
+        //     return a + b;
+        // }
+        // console.log(a+b);
+
+        var var1 = 1;
+
+        if(true) {
+            var var2 = 2;
+            if(true) {
+                var var3 = 3;
+            }
+        }
+
+        var a =1; //전역변수
+
+        if(true) {
+            var a = 10; //중복선언
+        }
+        console.log(a); //10
+
+        var i = 10;
+        for (let i = 0; i < 5; i++) {
+           console.log(i);
+        }
+        console.log(i);
+
+        // function sunc() {
+        //     var x;
+        //     x="지역";
+        //     console.log(x);
+        //     return x;
+        // }
+        // func();
+        // console.log(x);
+
+        // function foo() {
+        //     var var1 = 4;
+        //     function bar() {
+        //         var var1 = 3;
+        //     }
+        // }
+
+
+        
+
+    </script>
+</body>
+</html>

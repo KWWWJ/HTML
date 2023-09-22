@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼</title>
+    <style>
+        .rectangle {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="btn">나를 눌러봐</button>
+
+    <div class="rectangle" id="rotate"></div>
+
+    <script>
+        //일단 const로 선언하고 안되면 let박기
+        const btn = document.getElementById("btn"); //;을 없애고 아래있는 함수를 이어 쓸수도 있지만 길어지므로 보기 편하게 바꿔주자.
+        // btn.addEventListener('click', () => {
+        //     alert("버튼이 작동됨")
+        // })
+      
+        function alertEvent() { //이래 쓸 수 도 있다.
+            alert("버튼 클릭");
+        }
+        btn.addEventListener("click", alertEvent);
+
+        const rectangle = document.getElementById("rotate");
+        rectangle.addEventListener("click", () => {
+            angle += 45;
+            // rectangle.style.transform = "rotate(45deg)"
+            rectangle.style.transform = 'rotate(${angle}deg';
+        });
+    </script>
+
+</body>
+</html>

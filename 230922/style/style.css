@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.div-scoreBoard {
+    width: 400px;
+    background-color: dodgerblue;
+    text-align: center;
+    padding: 2px;
+}
+
+.div-scoreBoard .inner {
+    margin: auto;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+.div-shots-left {
+    margin-top: 10px;
+}
+.shots-left {
+    color: black;
+    padding: 3px;
+}
+.div-score {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+}
+.div-score-name {
+    font-size: 20px;
+}
+.div-score-number {
+    font-size: 30px;
+    color: red;
+    background-color: #000;
+    line-height: 30px;
+}
+#text {
+    height: 30px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.div-panel {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+.div-contol-panel {
+    width: 400px;
+    background-color: aqua;
+    text-align: center;
+    padding: 2px;
+    color: #fff;
+}
+.div-contol-name {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
