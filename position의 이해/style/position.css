@@ -1,0 +1,103 @@
+body {
+    background: #cfd8dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-stage {
+    display: block;
+    margin-top: 100px;
+    width: 600px;
+    height: 800px;
+    background-color: white;
+    overflow: auto;
+}
+
+.work-stage__box {
+    height: 3000px;
+}
+
+
+/* static */
+.work-stage__box div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid;
+}
+
+/* relative */
+.work-stage__box1 div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid;
+    position: relative;
+}
+#box1 {
+    top: 30px;
+}
+#box3 {
+    top: 30px;
+}
+
+/* absolute */
+.work-stage__box2 div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid;
+    position: absolute;
+}
+#parent {
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+.box:first-child {
+    top: 20px;
+    left: 20px;
+}
+.box:nth-child(2) {
+    top: 40px;
+    left: 40px;
+}
+.box:nth-child(3) {
+    top: 60px;
+    left: 60px;
+}
+.box:last-child {
+    top: 80px;
+    left: 90px;
+}
+
+
+/* fixed */
+.work-stage__box3 {
+    width: 60%;
+    height: 300%;
+    position: static;
+    /* 아래는 stivy속성이 추가된fixed */
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.content {
+    font-size: 50px;
+    color: coral;
+    margin: 30px;
+}
+#nav {
+    width: 45%;
+    top: 10px;
+    /* height: 50px; 그냥 fixed일때*/
+    /* margin: 5px; 얘도 fixed일때 */
+    margin-left: auto;
+    border: 1px solid;
+    /* position: fixed; 얘도 fixed일떄 */
+    position: sticky;
+}
+
